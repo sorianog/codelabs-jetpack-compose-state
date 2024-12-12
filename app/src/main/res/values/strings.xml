@@ -2,4 +2,5 @@
     <string name="app_name">BasicStateCodelab</string>
     <string name="glasses_count_msg">You\'ve had %1$s glasses</string>
     <string name="add_one">Add one</string>
+    <string name="clear_water_count">Clear water count</string>
 </resources>
