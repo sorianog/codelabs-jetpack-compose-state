@@ -9,6 +9,7 @@ import com.sorianog.basicstatecodelab.ui.WellnessTaskItem
 @Composable
 fun WellnessTasksList(
     list: List<WellnessTask>,
+    onCheckedTask: (WellnessTask, Boolean) -> Unit,
     onCloseTask: (WellnessTask) -> Unit,
     modifier: Modifier = Modifier,
 ) {
@@ -19,6 +20,8 @@ fun WellnessTasksList(
         ) { task ->
             WellnessTaskItem(
                 taskName = task.label,
+                checked = task.checked,
+                onCheckedChanged = { checked -> onCheckedTask(task, checked) },
                 onClose = { onCloseTask(task) }
             )
         }
