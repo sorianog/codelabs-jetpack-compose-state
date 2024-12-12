@@ -21,10 +21,17 @@ fun WaterCounter(modifier: Modifier = Modifier) {
     Column(modifier = modifier.padding(16.dp)) {
         var count by remember { mutableIntStateOf(0) }
 
-        Text(
-            text = stringResource(R.string.glasses_count_msg, count)
-        )
-        Button(onClick = { count++ }, Modifier.padding(top = 8.dp)) {
+        if (count > 0) {
+            Text(
+                text = stringResource(R.string.glasses_count_msg, count)
+            )
+        }
+        
+        Button(
+            onClick = { count++ },
+            Modifier.padding(top = 8.dp),
+            enabled = count < 10
+        ) {
             Text(stringResource(R.string.add_one))
         }
     }
