@@ -6,12 +6,12 @@ plugins {
 
 android {
     namespace = "com.sorianog.basicstatecodelab"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.sorianog.basicstatecodelab"
         minSdk = 24
-        targetSdk = 34
+        targetSdk = 35
         versionCode = 1
         versionName = "1.0"
 

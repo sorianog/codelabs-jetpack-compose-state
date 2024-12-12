@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">BasicStateCodelab</string>
+    <string name="glasses_count_msg">You\'ve had %1$s glasses</string>
 </resources>
